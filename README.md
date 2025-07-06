@@ -201,5 +201,4 @@ appropriately spent shipping costs based on the Order Priority? Explain your ans
 
 ## 📂 Files Included
 
-- [Amazon Product Review Analysis.xlsx](Amazon%20Product%20Review%20Analysis.xlsx)
-- [Dashboard_screenshot.png](Dashboard_screenshot.png)
+- [KMS_SQL_ANALYSIS.sql](KMS_SQL_ANALYSIS.sql)
