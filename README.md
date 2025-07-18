@@ -19,7 +19,7 @@ The dataset is based on a business scenario of **KMS**, a retail company operati
       
                  SELECT [Product Category],
                  SUM(Sales) AS [Total Sales]
-                 FROM dbo.[KMS Sql Case Study]
+                 FROM  dbo.[KMS Sql Case Study]
                  GROUP BY [Product Category]
                  ORDER BY [Total Sales] DESC
     - Insight: This identifies the top-performing product category by total sales. Focus marketing or inventory efforts here.
@@ -27,13 +27,13 @@ The dataset is based on a business scenario of **KMS**, a retail company operati
     - Top 3:
     
                  SELECT TOP 3 [Region], SUM([Sales]) AS [Total Sales]
-                 FROM dbo.[KMS Sql Case Study]
+                 FROM  dbo.[KMS Sql Case Study]
                  GROUP BY [Region]
                  ORDER BY [Total Sales] DESC
     - Bottom 3:
     
                  SELECT TOP 3 [Region], SUM([Sales]) AS [Total Sales]
-                 FROM		 dbo.[KMS Sql Case Study]
+                 FROM  dbo.[KMS Sql Case Study]
                  GROUP BY     [Region]
                  ORDER BY     [Total Sales] ASC
     - Insight: High-performing regions can be used as benchmarks, while the bottom 3 may need attention.
@@ -63,7 +63,7 @@ The dataset is based on a business scenario of **KMS**, a retail company operati
                SELECT 
             		TOP 1 [Ship Mode], 
             		SUM([Shipping Cost]) AS [Total Shipping Cost]
-               FROM	dbo.[KMS Sql Case Study]
+               FROM	 dbo.[KMS Sql Case Study]
                GROUP BY [Ship Mode]
                ORDER BY [Total Shipping Cost] DESC;
     - Insight: Once you find the issues, think about using personalized promotions or loyalty programs. Also, check if poor service is causing low sales. 
