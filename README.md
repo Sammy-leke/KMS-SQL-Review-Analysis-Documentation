@@ -26,23 +26,23 @@ The dataset is based on a business scenario of **KMS**, a retail company operati
 2. What are the Top 3 and Bottom 3 regions in terms of sales?
     - Top 3:
     
-             SELECT TOP 3 [Region], SUM([Sales]) AS [Total Sales]
-             FROM dbo.[KMS Sql Case Study]
-             GROUP BY [Region]
-             ORDER BY [Total Sales] DESC
+                 SELECT TOP 3 [Region], SUM([Sales]) AS [Total Sales]
+                 FROM dbo.[KMS Sql Case Study]
+                 GROUP BY [Region]
+                 ORDER BY [Total Sales] DESC
     - Bottom 3:
     
-                SELECT TOP 3 [Region], SUM([Sales]) AS [Total Sales]
-                FROM		 dbo.[KMS Sql Case Study]
-                GROUP BY     [Region]
-                ORDER BY     [Total Sales] ASC
+                 SELECT TOP 3 [Region], SUM([Sales]) AS [Total Sales]
+                 FROM		 dbo.[KMS Sql Case Study]
+                 GROUP BY     [Region]
+                 ORDER BY     [Total Sales] ASC
     - Insight: High-performing regions can be used as benchmarks, while the bottom 3 may need attention.
 3. What were the total sales of appliances in Ontario?
     - SQL Query:
     
-                         SELECT  SUM([Sales]) AS [Ontario Appliance Sales]
-                         FROM	dbo.[KMS Sql Case Study]
-                         WHERE   [Product Sub-Category] = 'Appliances' AND [Province] = 'Ontario';
+                SELECT  SUM([Sales]) AS [Ontario Appliance Sales]
+                FROM	dbo.[KMS Sql Case Study]
+                WHERE   [Product Sub-Category] = 'Appliances' AND [Province] = 'Ontario';
     - Insight: This provides a sales summary by province for a specific product sub-category. This information is valuable for regional planning..
 4. Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers
     - SQL Query:
